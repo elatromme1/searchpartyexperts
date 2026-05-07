@@ -10,6 +10,8 @@ collections:
     label: "Guests"
     folder: "_data/guests"
     create: true
+    extension: yml
+    format: yaml
     slug: "{{slug}}"
     identifier_field: name
     fields:
