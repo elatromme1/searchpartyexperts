@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "guests"
+    label: "Guests"
+    folder: "_data/guests"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Firm", name: "firm", widget: "string", required: false}
+      - {label: "Bio", name: "bio", widget: "text", required: false}
+      - {label: "Topics", name: "topics", widget: "list", required: false}
+      - {label: "Episode Title", name: "episodeTitle", widget: "string", required: false}
+      - {label: "Episode URL", name: "episodeUrl", widget: "string", required: false}
+      - {label: "Headshot", name: "headshot", widget: "image", required: false}

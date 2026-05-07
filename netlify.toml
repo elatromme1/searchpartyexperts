@@ -1,0 +1,9 @@
+[build]
+  command = "pip install pyyaml && python build.py"
+  publish = "."
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
